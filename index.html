@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Github vs. Bitbucket Companion</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="row">
+    <div id="logoWrapper">
+		<a href="http://osintegrators.com/" title="Home" rel="home" id="logo">	
+		</a>
+	  </div>
+    </header>
+    <div id="container" class="row">
+    <section>
+    <h1>Github vs. Bitbucket Companion</h1>
+    <p>Here are two tools referenced in the InfoWorld article. Enjoy!</p>
+    </section>
+
+    <section>
+    <h2>Cost Comparison</h2>
+
+    <div id="cost-compare">
+      <p>
+      I have 
+      <select id="repos">
+        <option value="25">0-10</option>
+        <option value="50">11-20</option>
+        <option value="100">21-50</option>
+        <option value="200">51-125</option>
+      </select>
+      private repositories and 
+      <select id="contributors">
+        <option value="0">0-5</option>
+        <option value="10">6-10</option>
+        <option value="25">11-25</option>
+        <option value="50">26-50</option>
+        <option value="100">51-100</option>
+        <option value="200">>100</option>
+      </select>
+      contributing developers.
+      </p>
+      <div id="results" class="cf">
+        <div id="winner"></div>
+        <div class="one-result">
+          <div class="host">Github</div>
+          <div class="cost">$<span id="git-cost"></span></div>
+        </div>
+        <div class="one-result">
+          <div class="host">Bitbucket</div>
+          <div class="cost">$<span id="bit-cost"></span></div>
+        </div>
+      </div>
+    </div>
+    </section>
+    </div>
+    <!-- end container -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>
